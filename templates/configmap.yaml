@@ -175,7 +175,8 @@ data:
         host: 
           {{- range $value := .Values.discovery.host }}
           - "{{ $value }}"             # multiple nacos address
-          {{- end}}     
+          {{- end}}
+        prefix: {{ .Values.discovery.prefix }}       
     {{- end }}
 
     {{- if .Values.plugins }}

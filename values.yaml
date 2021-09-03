@@ -220,8 +220,8 @@ discovery:
   enabled: true
   method: nacos
   host: 
-    - "http://192.168.3.33:18848"
-
+    - "http://nacos:nacos@192.168.3.33:18848"
+  prefix: "/nacos/v1/"
 
     
 dashboard:
